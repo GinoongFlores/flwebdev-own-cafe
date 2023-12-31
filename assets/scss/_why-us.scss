@@ -1,0 +1,51 @@
+@import "variables";
+
+$color_1: #ffcf88;
+$color_2: #6c665c;
+$color_3: #aaaaaa;
+$color_4: #fff;
+
+/*--------------------------------------------------------------
+# Whu Us
+--------------------------------------------------------------*/
+.why-us {
+	.box {
+		padding: 50px 30px;
+		box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+		transition: all ease-in-out 0.3s;
+		height: 100%;
+		span {
+			display: block;
+			font-size: 28px;
+			font-weight: 700;
+			color: $color_1;
+		}
+		h4 {
+			font-size: 24px;
+			font-weight: 600;
+			padding: 0;
+			margin: 20px 0;
+			color: $color_2;
+		}
+		p {
+			color: $color_3;
+			font-size: 15px;
+			margin: 0;
+			padding: 0;
+		}
+		&:hover {
+			background: $main-color;
+			padding: 30px 30px 70px 30px;
+			box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+			span {
+				color: $color_4;
+			}
+			h4 {
+				color: $color_4;
+			}
+			p {
+				color: $color_4;
+			}
+		}
+	}
+}

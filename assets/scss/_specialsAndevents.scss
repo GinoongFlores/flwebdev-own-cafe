@@ -1,0 +1,143 @@
+@import "variables";
+$color_3: #777777;
+$color_4: #fff;
+$background-color_1: rgba(75, 48, 21, 0.8);
+
+/*--------------------------------------------------------------
+# Specials
+--------------------------------------------------------------*/
+
+.specials {
+	overflow: hidden;
+	.nav-tabs {
+		border: 0;
+	}
+	.nav-link {
+		border: 0;
+		padding: 12px 15px 12px 0;
+		transition: 0.3s;
+		color: $third-color;
+		border-radius: 0;
+		border-right: 2px solid #e8e7e4;
+		font-weight: 600;
+		font-size: 15px;
+		&:hover {
+			color: $main-color;
+		}
+	}
+	.nav-link.active {
+		color: $main-color;
+		border-color: $main-color;
+	}
+	.tab-pane.active {
+		animation: fadeIn 0.5s ease-out;
+	}
+	.details {
+		h3 {
+			font-size: 26px;
+			font-weight: 600;
+			margin-bottom: 20px;
+			color: $main-color;
+		}
+		p {
+			color: $color_3;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.events {
+	background: url(../img/events-bg.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	&::before {
+		content: "";
+		background-color: $background-color_1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	.section-title {
+		h2 {
+			color: $color_4;
+		}
+	}
+	.container {
+		position: relative;
+	}
+	.events-carousel {
+		background: rgba(255, 255, 255, 0.08);
+		padding: 30px;
+	}
+	.event-item {
+		color: $color_4;
+		h3 {
+			font-weight: 600;
+			font-size: 26px;
+			color: $secondary-color;
+		}
+		.price {
+			font-size: 26px;
+			font-family: inherit;
+			font-weight: 700;
+			margin-bottom: 15px;
+			span {
+				border-bottom: 2px solid $main-color;
+			}
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				padding-bottom: 10px;
+			}
+			i {
+				font-size: 20px;
+				padding-right: 4px;
+				color: $secondary-color;
+			}
+		}
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.swiper-pagination {
+		margin-top: 20px;
+		position: relative;
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			background-color: $main-color;
+			opacity: 1;
+		}
+		.swiper-pagination-bullet-active {
+			background-color: $main-color;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.specials {
+		.nav-link {
+			border: 0;
+			padding: 15px;
+		}
+		.nav-link.active {
+			color: $third-color;
+			background: $main-color;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	.events {
+		background-attachment: fixed;
+	}
+}

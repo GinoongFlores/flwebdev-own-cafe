@@ -1,0 +1,121 @@
+@use "navigation";
+@use "hero";
+@use "sections";
+@use "breadcrumbs";
+@use "about";
+@use "why-us";
+@use "menu";
+@use "specialsAndevents";
+@use "book-a-table";
+@use "galleryAndchefs";
+@use "testimonials";
+@use "contact";
+@use "footer";
+
+@import "variables";
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: $main-color;
+}
+a {
+	text-decoration: none;
+	color: $main-color;
+	&:hover {
+		color: $fourth-color;
+		text-decoration: none;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Satisfy", sans-serif;
+}
+.back-to-top {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 15px;
+	bottom: 15px;
+	z-index: 996;
+	background: $main-color;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	transition: all 0.4s;
+	i {
+		font-size: 28px;
+		color: #fff;
+		line-height: 0;
+	}
+	&:hover {
+		background: $fourth-color;
+		color: #fff;
+	}
+	&.active {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+#topbar {
+	padding: 0;
+	font-size: 15px;
+	height: 50px;
+	transition: all 0.5s;
+	background: rgba(26, 24, 22, 0.8);
+	z-index: 996;
+	color: rgba(255, 255, 255, 0.7);
+	&.topbar-transparent {
+		background: transparent;
+	}
+	&.topbar-scrolled {
+		top: -50px;
+	}
+	i {
+		color: $secondary-color;
+		line-height: 0;
+		font-size: 1rem;
+		span {
+			color: #fff;
+			font-style: normal;
+			padding-left: 5px;
+		}
+	}
+}
+#header {
+	top: 50px;
+	height: 70px;
+	z-index: 997;
+	transition: all 0.5s;
+	padding: 10px 0;
+	background: rgba(26, 24, 22, 0.85);
+	&.header-transparent {
+		background: transparent;
+	}
+	&.header-scrolled {
+		top: 0;
+		background: rgba(26, 24, 22, 0.85);
+	}
+	.logo {
+		h1 {
+			font-size: 28px;
+			margin: 0;
+			line-height: 1;
+			font-weight: 400;
+			letter-spacing: 3px;
+		}
+		img {
+			padding: 0;
+			margin: 0;
+			max-height: 40px;
+		}
+	}
+}
+#header .logo h1 a,
+#header .logo h1 a:hover {
+	color: #fff;
+	text-decoration: none;
+}

@@ -1,0 +1,204 @@
+@import "variables";
+
+$color_1: #fff;
+
+$color_3: rgba(255, 255, 255, 0.5);
+$color_4: rgba(255, 255, 255, 0.8);
+$background-color_1: rgba(190, 129, 37, 0.8);
+$background-color_2: rgba(12, 11, 10, 0.5);
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+	width: 100%;
+	height: 100vh;
+	background-color: $background-color_1;
+	overflow: hidden;
+	padding: 0;
+	.carousel-item {
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		&::before {
+			content: "";
+			background-color: $background-color_2;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+		}
+	}
+	.carousel-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.carousel-content {
+		text-align: center;
+	}
+	h2 {
+		color: $color_1;
+		margin-bottom: 30px;
+		font-size: 48px;
+		font-weight: 700;
+		span {
+			color: $main-color;
+		}
+	}
+	p {
+		width: 80%;
+		animation-delay: 0.4s;
+		margin: 0 auto 30px auto;
+		color: $color_1;
+	}
+	.carousel-inner {
+		.carousel-item {
+			transition-property: opacity;
+			background-position: center top;
+			opacity: 0;
+		}
+		.active.carousel-item-start {
+			opacity: 0;
+			left: 0;
+			transform: translate3d(0, 0, 0);
+		}
+		.active.carousel-item-end {
+			opacity: 0;
+			left: 0;
+			transform: translate3d(0, 0, 0);
+		}
+		.active {
+			opacity: 1;
+			transition: 0.5s;
+		}
+		.carousel-item-next.carousel-item-start {
+			opacity: 1;
+			transition: 0.5s;
+		}
+		.carousel-item-prev.carousel-item-end {
+			opacity: 1;
+			transition: 0.5s;
+		}
+		.carousel-item-next {
+			left: 0;
+			transform: translate3d(0, 0, 0);
+		}
+		.carousel-item-prev {
+			left: 0;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.carousel-control-next-icon {
+		background: none;
+		font-size: 30px;
+		line-height: 0;
+		width: auto;
+		height: auto;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 50px;
+		transition: 0.3s;
+		color: $color_3;
+		width: 54px;
+		height: 54px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			background: rgba(255, 255, 255, 0.3);
+			color: $color_4;
+		}
+	}
+	.carousel-control-prev-icon {
+		background: none;
+		font-size: 30px;
+		line-height: 0;
+		width: auto;
+		height: auto;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 50px;
+		transition: 0.3s;
+		color: $color_3;
+		width: 54px;
+		height: 54px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			background: rgba(255, 255, 255, 0.3);
+			color: $color_4;
+		}
+	}
+	.carousel-indicators {
+		li {
+			cursor: pointer;
+			list-style-type: none;
+		}
+	}
+	.btn-menu {
+		font-weight: 600;
+		font-size: 13px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 12px 30px;
+		border-radius: 50px;
+		transition: 0.5s;
+		line-height: 1;
+		margin: 0 10px;
+		animation-delay: 0.8s;
+		color: $color_1;
+		border: 2px solid $main-color;
+		&:hover {
+			background: $main-color;
+			color: $color_1;
+		}
+	}
+	.btn-book {
+		font-weight: 600;
+		font-size: 13px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 12px 30px;
+		border-radius: 50px;
+		transition: 0.5s;
+		line-height: 1;
+		margin: 0 10px;
+		animation-delay: 0.8s;
+		color: $color_1;
+		border: 2px solid $main-color;
+		&:hover {
+			background: $main-color;
+			color: $color_1;
+		}
+	}
+}
+@media (max-width: 768px) {
+	#hero {
+		h2 {
+			font-size: 28px;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	#hero {
+		p {
+			width: 50%;
+		}
+		.carousel-control-prev {
+			width: 5%;
+		}
+		.carousel-control-next {
+			width: 5%;
+		}
+	}
+}
