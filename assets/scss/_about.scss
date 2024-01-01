@@ -20,7 +20,7 @@ $color_2: #848484;
 	background: #fffaf3;
 	.content {
 		padding: 0 80px;
-		h3 {
+		h1 {
 			font-weight: 400;
 			font-size: 34px;
 			color: $color_1;
@@ -31,7 +31,7 @@ $color_2: #848484;
 			margin-top: 5px;
 		}
 		p {
-			font-size: 15px;
+			font-size: 1rem;
 			color: $color_2;
 			&:last-child {
 				margin-bottom: 0;
@@ -41,11 +41,7 @@ $color_2: #848484;
 			list-style: none;
 			padding: 0;
 			li {
-				+ {
-					li {
-						margin-top: 15px;
-					}
-				}
+				margin-top: 20px;
 				position: relative;
 				padding-left: 26px;
 			}
@@ -62,7 +58,7 @@ $color_2: #848484;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		min-height: 400px;
+		min-height: 500px;
 		position: relative;
 	}
 	.play-btn {

@@ -17,10 +17,6 @@
 		align-items: center;
 	}
 
-	li {
-		position: relative;
-	}
-
 	a,
 	a:focus {
 		display: flex;
@@ -32,6 +28,7 @@
 		color: white;
 		white-space: nowrap;
 		transition: 0.3s;
+		font-weight: 500;
 
 		i {
 			font-size: 12px;
@@ -44,7 +41,7 @@
 	.active,
 	.active:focus,
 	li:hover > a {
-		color: $main-color;
+		color: $fourth-color;
 	}
 
 	.dropdown {

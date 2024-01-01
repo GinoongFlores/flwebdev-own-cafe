@@ -16,23 +16,22 @@
 
 body {
 	font-family: "Poppins", sans-serif;
-	color: $main-color;
 }
 a {
 	text-decoration: none;
-	color: $main-color;
 	&:hover {
 		color: $fourth-color;
 		text-decoration: none;
 	}
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: "Satisfy", sans-serif;
+	font-family: "Lato", sans-serif;
 }
 .back-to-top {
 	position: fixed;
@@ -75,7 +74,7 @@ h6 {
 		top: -50px;
 	}
 	i {
-		color: $secondary-color;
+		color: $fourth-color;
 		line-height: 0;
 		font-size: 1rem;
 		span {
@@ -101,7 +100,7 @@ h6 {
 	}
 	.logo {
 		h1 {
-			font-size: 28px;
+			font-size: 2rem;
 			margin: 0;
 			line-height: 1;
 			font-weight: 400;

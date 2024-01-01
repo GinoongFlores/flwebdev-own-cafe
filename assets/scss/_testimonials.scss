@@ -7,14 +7,13 @@ $color_5: #eee;
 $font-family_1: "Poppins", sans-serif;
 $font-family_2: "Comic Neue", sans-serif;
 $background-color_1: rgba(255, 255, 255, 0.5);
-$background-color_2: var(--main-color);
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
 	padding: 80px 0;
-	background: url("../img/testimonials-bg.jpg") no-repeat;
+	background: url("../img/slide/slide-1.jpg") no-repeat;
 	background-position: center center;
 	background-size: cover;
 	position: relative;
