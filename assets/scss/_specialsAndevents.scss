@@ -9,6 +9,7 @@ $background-color_1: rgba(75, 48, 21, 0.8);
 
 .specials {
 	overflow: hidden;
+	background-color: $light-background-color;
 	.nav-tabs {
 		border: 0;
 	}
@@ -28,6 +29,7 @@ $background-color_1: rgba(75, 48, 21, 0.8);
 	.nav-link.active {
 		color: $main-color;
 		border-color: $main-color;
+		background-color: $light-background-color;
 	}
 	.tab-pane.active {
 		animation: fadeIn 0.5s ease-out;
