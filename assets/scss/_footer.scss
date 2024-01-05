@@ -19,47 +19,18 @@ $color_1: #fff;
 	hr.design {
 		height: 2px;
 		width: 60px;
-		background-color: #7c4dff;
+		background-color: $fifth-color;
 	}
 
 	h4 {
-		color: $main-color;
+		color: $fourth-color;
 	}
 
-	h3 {
-		font-size: 36px;
-		font-weight: 700;
-		color: $main-color;
-		position: relative;
-		padding: 0;
-		margin: 0 0 15px 0;
-	}
-	p {
-		font-size: 15px;
-		font-style: italic;
-		padding: 0;
-	}
-	.social-links {
-		margin: 0 0 40px 0;
-		a {
-			font-size: 18px;
-			display: inline-block;
-			background: #46423b;
-			color: $color_1;
-			line-height: 1;
-			padding: 8px 0;
-			margin-right: 4px;
-			border-radius: 50%;
-			text-align: center;
-			width: 36px;
-			height: 36px;
-			transition: 0.3s;
-			&:hover {
-				background: var(--main-color);
-			}
-		}
-	}
-	.credits {
+	.copyright {
 		font-size: 13px;
+		font-style: italic;
+		p {
+			margin: 0;
+		}
 	}
 }

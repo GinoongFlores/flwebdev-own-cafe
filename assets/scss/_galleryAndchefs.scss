@@ -28,8 +28,8 @@ $font-family_1: "Poppins", sans-serif;
 /*--------------------------------------------------------------
 # Chefs
 --------------------------------------------------------------*/
-.chefs {
-	background: url("../img/chefs-bg.jpg") center center no-repeat;
+.baristas {
+	background: url("../img/slide/slide-1.jpg") center center no-repeat;
 	background-size: cover;
 	padding: 60px 0;
 	position: relative;
@@ -107,14 +107,14 @@ $font-family_1: "Poppins", sans-serif;
 	}
 }
 @media (max-width: 992px) {
-	.chefs {
+	.baristas {
 		.member {
 			margin-bottom: 110px;
 		}
 	}
 }
 @media (min-width: 1024px) {
-	.chefs {
+	.baristas {
 		background-attachment: fixed;
 	}
 }
